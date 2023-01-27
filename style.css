@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #201d1f;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+}
+
+.container{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.container .card{
+    position: relative;
+}
+
+.container .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 4s;
+    
+}

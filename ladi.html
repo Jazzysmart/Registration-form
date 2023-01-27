@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladi</title>
+</head>
+<body>
+    <select onchange="changeBacgroundColor(this)">
+        <option value="white">white</option>
+        <option value="green">green</option>
+        <option value="red">red</option>
+        <option value="black">black</option>
+    </select>
+    <br><br>
+    <select onchange="changeTextColor(this)">
+        <option value="black">changeTextColor</option>
+        <option value="yellow">yellow</option>
+        <option value="blue">blue</option>
+        <option value="white">white</option>
+    </select><br>
+
+    <script>
+        function changeBacgroundColor(e) {
+            document.body.style.background = e.value;
+        }
+        function changeTextColor(e) {
+            document.body.style.color = e.value
+        }
+    </script>
+    <center><h1>Form</h1></center>
+    <form>
+        <div>
+            <label>Username &#42;</label>
+            <input type="text" style="border-radius: 10px;">
+            <br><br>
+            <label> Email &#42;</label>
+            <input type="text" style="border-radius: 10px;">
+            <br><br>
+            <label>phone number &#42;</label>
+            <input type="text" style="border-radius: 10px;">
+            <br><br>
+            <label>Password &#42;</label>
+            <input type="password" style="border-radius: 10px;">
+            <br><br>
+            <select name="country" id="">
+                <option value="">America</option>
+                <option value="">Canada</option>
+                <option value="">France</option>
+                <option value="">England</option>
+                <option value="">Ghana</option>
+                <option value="">South Africa</option>
+                <option value="">Germany</option>
+                <option value="">Italy</option>
+                <option value="">Nigeria</option>
+            </select>
+            <br>
+            <div>
+            <p>Gender &#42;</p>
+            <label>Male &#42;</label>
+            <input type="radio" id="male" name="Gender" value="male">
+            <br><br>
+            <label>Female &#42;</label>
+            <input type="radio" id="Female" name="Gender" value="female">
+            <br><br>
+            <label>Other &#42;</label>
+            <input type="radio" id="Other" name="Gender" value="other">
+        </div>
+        <br>
+        <label for="age">Age &#42;</label>
+        <input type="number" name="age">
+        </div>
+        <br>
+        <label for="birthday">Birthday &#42;</label>
+        <input type="date" name="birthday" id="">
+        <br><br>
+        </label>
+        <input type="submit" name="submit" value="Reset">
+        <input type="submit" name="submit" value="submit">
+    </form>
+</body>
+</html>
